@@ -1,6 +1,6 @@
 # React Iro - A React Wrapper for iro.js
 
-React Iro is an open-source library that provides a React wrapper for iro.js, a versatile color picker library. With React Iro, you can easily integrate an interactive color picker into your React applications, allowing users to select colors for various elements and purposes.
+React Iro is an UNOFFICIAL open-source library that provides a React wrapper for iro.js, a versatile color picker library. With React Iro, you can easily integrate an interactive color picker into your React applications, allowing users to select colors for various elements and purposes.
 
 ## Installation
 
