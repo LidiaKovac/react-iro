@@ -96,8 +96,4 @@ React Iro is open-source and licensed under the [MIT License](https://opensource
 
 ## Acknowledgments
 
-React Iro is based on the powerful iro.js library, and we extend our gratitude to the iro.js team for providing such a fantastic color picker solution.
-
----
-
-By using React Iro, you can effortlessly add a feature-rich color picker to your React projects. Whether you need color customization for themes, charts, or anything else, React Iro has you covered. Enjoy building your applications with dynamic and intuitive color selection!
+React Iro is based on the powerful [iro.js](https://iro.js.org) library, and we extend our gratitude to the [iro.js](https://iro.js.org) team for providing such a fantastic color picker solution.
