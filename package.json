@@ -1,6 +1,6 @@
 {
     "name": "react-iro",
-    "version": "0.0.17",
+    "version": "0.0.20",
     "description": "React Wrapper for iro.js",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -28,13 +28,13 @@
         "@jaames/iro": ">=5.5.2"
     },
     "peerDependencies": {
-        "@types/react": ">=16",
         "@jaames/iro": ">=5.5.2",
+        "@types/react": ">=16",
         "react": ">=16"
     },
     "devDependencies": {
         "@jaames/iro": ">=5.5.2",
         "react": ">=16",
-        "typescript": "^5.0.0"
+        "typescript": "^5.1.6"
     }
 }
