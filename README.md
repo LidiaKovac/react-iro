@@ -17,7 +17,7 @@ To use React Iro in your React application, follow these steps:
 1. Import the component:
 
 ```jsx
-import ColorPicker from "react-iro"
+import { ColorPicker } from "react-iro"
 ```
 
 2. Define the color picker options and pass them as props:
@@ -48,7 +48,7 @@ Here's a complete example of how to use React Iro:
 
 ```tsx
 import { useState } from "react"
-import ColorPicker from "react-iro"
+import { ColorPicker } from "react-iro"
 import iro from "@jaames/iro";
 
 const Example = () => {
