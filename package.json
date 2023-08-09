@@ -1,6 +1,6 @@
 {
     "name": "react-iro",
-    "version": "0.0.17",
+    "version": "0.0.32",
     "description": "React Wrapper for iro.js",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
@@ -24,28 +24,28 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "rm -rf dist && babel src/react-iro --out-dir dist --copy-files",
-        "prepublish": "rm -rf dist && rollup -c"
+        "bundle": "rm -rf dist && rollup -c -w"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@jaames/iro": ">=5.5.2",
-        "react": ">=16"
+        "@jaames/iro": "^5.5.2"
     },
     "peerDependencies": {
-        "@jaames/iro": ">=5.5.2",
-        "@types/react": ">=16",
-        "react": ">=16"
+        "react": ">=17.0.0",
+        "react-dom": ">=17.0.0"
     },
     "devDependencies": {
+        "@rollup/plugin-replace": "^5.0.2",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "@babel/core": "^7.22.10",
         "@babel/preset-env": "^7.22.10",
         "@babel/preset-react": "^7.22.5",
-        "@jaames/iro": ">=5.5.2",
         "@rollup/plugin-babel": "^6.0.3",
         "@rollup/plugin-commonjs": "^25.0.3",
         "@rollup/plugin-node-resolve": "^15.1.0",
         "@rollup/plugin-typescript": "^11.1.2",
-        "react": ">=16",
+        "@types/react": ">=17.0.0",
         "rollup": "^3.28.0",
         "rollup-plugin-dts": "^5.3.1",
         "tslib": "^2.6.1",

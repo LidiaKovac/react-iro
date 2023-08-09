@@ -1,7 +1,7 @@
 import iro from "@jaames/iro"
 import { IroColorPicker } from "@jaames/iro/dist/ColorPicker"
 import { LayoutDirection, WheelDirection } from "@irojs/iro-core"
-import React,{ useRef, useEffect } from "react"
+import React, { useRef, useEffect } from "react"
 interface ColorPickerLayoutDefinition {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     component: any;
@@ -37,8 +37,8 @@ export interface WrapperOptions {
     onChangeColor: (val: iro.Color) => void
 }
 export default function ColorPicker({ options, setters }: { options: ColorPickerProps, setters: WrapperOptions },) {
+    const ref = useRef<HTMLDivElement>(null)
     const colorPicker = useRef<IroColorPicker>()
-    const ref = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
         const cp = (colorPicker.current = iro.ColorPicker(ref.current!, {
