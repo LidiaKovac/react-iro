@@ -1,6 +1,6 @@
 {
     "name": "react-iro",
-    "version": "0.0.20",
+    "version": "0.0.27",
     "description": "React Wrapper for iro.js",
     "main": "dist/index.js",
     "module": "dist/index.js",
@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rm -rf dist && babel src/react-iro --out-dir dist --copy-files",
+        "build": "rm -rf dist && babel src --out-dir dist --copy-files",
         "prepublish": "rm -rf ./dist && npm run build"
     },
     "author": "",
