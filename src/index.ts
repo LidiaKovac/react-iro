@@ -1,2 +1,1 @@
-import ColorPicker from "./ColorPicker"
-export default ColorPicker
+export * from "./react-iro/index"
