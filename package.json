@@ -1,6 +1,6 @@
 {
     "name": "react-iro",
-    "version": "0.0.14",
+    "version": "0.0.17",
     "description": "React Wrapper for iro.js",
     "main": "dist/index.js",
     "module": "dist/index.js",

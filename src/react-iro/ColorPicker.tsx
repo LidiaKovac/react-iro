@@ -1,7 +1,7 @@
 import iro from "@jaames/iro"
 import { IroColorPicker } from "@jaames/iro/dist/ColorPicker"
 import { LayoutDirection, WheelDirection } from "@irojs/iro-core"
-import React, { useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 interface ColorPickerLayoutDefinition {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     component: any;
