@@ -5,7 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import replace from '@rollup/plugin-replace';
 import babel from '@rollup/plugin-babel';
-import packageJson from "./package.json" assert { type: "json" };
+import packageJson from "./package.json" with { type: "json" };
 import path from "path"
 
 export default [

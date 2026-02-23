@@ -41,14 +41,18 @@ export default function ColorPicker({ options, setters }: { options: ColorPicker
     const colorPicker = useRef<IroColorPicker>()
 
     useEffect(() => {
+        const container = ref.current!;
         const cp = (colorPicker.current = iro.ColorPicker(ref.current!, {
             ...options
-
         }))
-        cp.on("color:change", (color: iro.Color) => setters.onChangeColor(color))
+
+        console.log('creating handlers')
+        const handler = (color: iro.Color) => setters.onChangeColor(color);
+        cp.on("color:change", handler)
+
         return () => {
-            cp.off("color:change", setters.onChangeColor)
-            // ref.current!.remove()
+            cp.off("color:change", handler)
+            container.innerHTML = "";
         }
     }, [])
 
