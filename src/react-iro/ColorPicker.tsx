@@ -38,22 +38,19 @@ export interface WrapperOptions {
 }
 export default function ColorPicker({ options, setters }: { options: ColorPickerProps, setters: WrapperOptions },) {
     const ref = useRef<HTMLDivElement>(null)
-    const colorPicker = useRef<IroColorPicker>()
+    const colorPicker = useRef<IroColorPicker>(null)
 
     useEffect(() => {
-        const cp = (colorPicker.current = iro.ColorPicker(ref.current!, {
+        const cp = ((colorPicker.current as IroColorPicker) = iro.ColorPicker(ref.current!, {
             ...options
 
         }))
         cp.on("color:change", (color: iro.Color) => setters.onChangeColor(color))
         return () => {
-            cp.off("color:change", setters.onChangeColor)
+            cp?.off("color:change", setters.onChangeColor)
             // ref.current!.remove()
         }
     }, [])
 
-    return <>
-
-        <div ref={ref}></div>
-    </>
+    return <div ref={ref}></div>
 }
