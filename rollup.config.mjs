@@ -5,7 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import replace from '@rollup/plugin-replace';
 import babel from '@rollup/plugin-babel';
-import packageJson from "./package.json" assert { type: "json" };
+import packageJson from "./package.json" with { type: "json" };
 import path from "path"
 
 export default [
@@ -52,7 +52,7 @@ export default [
         external: ["react", "react-dom"],
     },
     {
-        input: "dist/esm/types/index.d.ts",
+        input: "dist/index.d.ts",
         output: [{ file: "dist/index.d.ts", format: "esm" }],
         plugins: [dts()],
     },
