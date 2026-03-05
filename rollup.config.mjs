@@ -41,7 +41,11 @@ export default [
                 preventAssignment: false,
                 'process.env.NODE_ENV': '"development"'
             }),
-            typescript({ tsconfig: "./tsconfig.json" }),
+            typescript({ 
+                tsconfig: "./tsconfig.json",
+                declaration: true,
+                declarationDir: "dist",
+            }),
             babel({
                 presets: ["@babel/preset-react"],
                 exclude: 'node_modules/**',
@@ -52,9 +56,8 @@ export default [
         external: ["react", "react-dom"],
     },
     {
-        input: "dist/index.d.ts",
+        input: "dist/cjs/src/index.d.ts",
         output: [{ file: "dist/index.d.ts", format: "esm" }],
         plugins: [dts()],
     },
-
 ];
